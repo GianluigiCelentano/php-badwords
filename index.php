@@ -9,6 +9,7 @@
 <body> 
     <h1>
         <?php
+        $ban = $_GET['change'];
         echo "Lorem ipsum dolor sit amet consectetur adipisicing elit. 
         Corrupti fugiat deserunt deleniti, nihil rem commodi dolore delectus non. 
         Odio minima tempora dolorum quod dignissimos voluptas optio iste temporibus porro repellat."
@@ -19,7 +20,7 @@
         $str = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. 
         Corrupti fugiat deserunt deleniti, nihil rem commodi dolore delectus non. 
         Odio minima tempora dolorum quod dignissimos voluptas optio iste temporibus porro repellat.';
-        $str = str_replace("deleniti", "***", $str);
+        $str = str_replace($ban, "***", $str);
         echo $str;
         ?>
     </h1>
